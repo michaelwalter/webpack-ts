@@ -7,7 +7,7 @@ const server = express();
 server.use('/static', express.static(path.join(__dirname, '../client')));
 
 server.listen(3000, () => {
-   console.log('Server listening on port 3000 :)');
+   console.log('Server listening on port 3000');
 });
 
 server.get('/', async (request: Request, response: Response) => {
