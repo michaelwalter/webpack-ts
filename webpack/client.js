@@ -1,4 +1,5 @@
-const path = require("path");
+const path = require('path');
+const CopyPlugin = require('copy-webpack-plugin');
 
 module.exports = {
     mode: 'development',
@@ -33,13 +34,46 @@ module.exports = {
                 exclude: /node_modules/
             },
             {
-                test: /\.css$/,
-                use: [ 'style-loader', 'css-loader' ]
+                test: /\.(sa|sc|c)ss$/,
+                use: [
+                    'style-loader',
+                    'css-loader',
+                    {
+                        loader: 'postcss-loader',
+                        options: {
+                            postcssOptions: {
+                                plugins: [
+                                    [
+                                        'postcss-preset-env',
+                                        {
+                                            browsers: 'last 2 versions',
+                                        },
+                                    ],
+                                ],
+                            },
+                        },
+                    },
+                    'sass-loader',
+                ],
             },
             {
                 test: /\.(png|svg|jpg|gif)$/,
                 use: ['file-loader']
             }
         ]
-    }
+    },
+    plugins: [
+        new CopyPlugin({
+            patterns: [
+                {
+                    from: 'node_modules/@webcomponents/webcomponentsjs/webcomponents-loader.js',
+                    to: 'webcomponentsjs',
+                },
+                {
+                    from: 'node_modules/@webcomponents/webcomponentsjs/custom-elements-es5-adapter.js',
+                    to: 'webcomponentsjs',
+                }
+            ],
+        }),
+    ]
 }

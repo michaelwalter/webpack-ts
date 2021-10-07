@@ -1,6 +1,13 @@
 {
   "compilerOptions": {
+    "target": "ES2015",
+    "experimentalDecorators": true,
     "sourceMap": true,
     "esModuleInterop": true,
+    "noImplicitAny": false,
+    "allowJs": true,
+    "resolveJsonModule" : true,
+    "moduleResolution": "Node",
+    "useDefineForClassFields": false
   }
 }

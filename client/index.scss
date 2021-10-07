@@ -1,0 +1,134 @@
+@import "~skeleton-framework/dist/skeleton.min.css";
+
+*:root {
+    --red: #ED1C24;
+    --dark-red: #D6151C;
+    --blue: #416FD6;
+    --dark-grey: #241F1F;
+    --medium-grey: #7F7F7F;
+    --light-grey: #CCC;
+    --white: #FFF;
+}
+
+@font-face {
+    font-family: BasicFont;
+    font-weight: 400;
+    src: url('./fonts/Poppins-Regular.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: BasicFont;
+    font-weight: 500;
+    src: url('./fonts/Poppins-Medium.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: BasicFont;
+    font-weight: 600;
+    src: url('./fonts/Poppins-SemiBold.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: BasicFont;
+    font-weight: 700;
+    src: url('./fonts/Poppins-Bold.ttf') format('truetype');
+}
+
+html {
+    font-size: 16px;
+}
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: BasicFont, Roboto, Helvetica, Arial, sans-serif;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5rem;
+}
+
+h3 {
+    color: var(--dark-grey);
+    font-size: 28px;
+    font-weight: 500;
+    line-height: 42px;
+    margin: 1rem 0 0.5rem;
+}
+
+form {
+    margin-bottom: 0;
+}
+
+p {
+    color: var(--dark-grey);
+    font-size: 1.5rem;
+    font-weight: 400;
+    line-height: 2.375rem;
+    margin: 2.5rem 0;
+}
+
+@media(max-width: 560px) {
+    p {
+        font-size: 1.125rem;
+        line-height: 1.625rem;
+    }
+}
+
+p strong {
+    color: var(--red);
+    font-weight: 500;
+    text-transform: uppercase;
+}
+
+footer {
+    background: var(--dark-grey);
+    color: var(--white);
+    font-size: 0.875rem;
+    font-weight: 500;
+    padding: 1.5rem 0 2rem;
+    text-align: center;
+}
+
+footer span {
+    font-size: 1.125rem;
+    font-weight: 600;
+}
+
+footer a {
+    color: var(--white);
+}
+
+footer a:hover {
+    color: var(--red);
+}
+
+@media(max-width: 560px) {
+    footer {
+        bottom: 0;
+        left: 0;
+        position: fixed;
+        right: 0;
+    }
+
+    footer span {
+        font-size: 1rem;
+    }
+}
+
+.container {
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+.title-bar-background {
+    background-blend-mode: darken;
+    background-color: rgba(238, 28, 35, 0.82);
+    background-image: url('assets/images/pageBarImage.png');
+    background-size: contain;
+    color: var(--white);
+    padding: 3rem 0 3.5rem;
+}

@@ -1,0 +1,268 @@
+[{
+  "category": null,
+  "id": 1,
+  "title": "Biznes i Finanse",
+  "tag": "NL_Biznes_pn_sr_pt",
+  "description": "Najnowsze wiadomości ze świata biznesu, giełdy i polskiej gospodarki.",
+  "frequency": "Poniedziałek, środa, piątek",
+  "photo": "http://dummyimage.com/300x180.png/5fa2dd/ffffff",
+  "author": [],
+  "source": [{
+      "image": "money.svg",
+      "name": "Money",
+      "url": "https://www.money.pl/"
+    }],
+  "preview": null
+}, {
+  "category": null,
+  "id": 2,
+  "title": "Biznes i Finanse (podsumowanie tygodnia)",
+  "tag": "NL_Biznes_top_sb",
+  "description": "Najciekawsze i najważniejsze wiadomości ze świata biznesu i gospodarki, których nie możesz przegapić.",
+  "frequency": "Sobota",
+  "photo": "http://dummyimage.com/300x180.png/cc0000/ffffff",
+  "author": [],
+  "source": [{
+    "image": "money.svg",
+    "name": "Money",
+    "url": "https://www.money.pl/"
+  }],
+  "preview": null
+}, {
+  "category": null,
+  "id": 3,
+  "title": "WP naturalnie",
+  "tag": "NL_Naturalnie_top_pn",
+  "description": "Cotygodniowa dawna newsów i poradników związanych z ekologią. Bądź na bieżąco z ekotrendami.",
+  "frequency": "Poniedziałek",
+  "photo": "http://dummyimage.com/300x180.png/cc0000/ffffff",
+  "author": [],
+  "source": [{
+    "image": "wp-naturalnie.svg",
+    "name": "WP naturalnie",
+    "url": "https://naturalnie.wp.pl/"
+  }],
+  "preview": null
+}, {
+  "category": null,
+  "id": 4,
+  "title": "Motoryzacja",
+  "tag": "NL_Moto_pn_sr_pt",
+  "description": "Wszystko dla fanów motoryzacji. Premiery, recenzje, newsy, wideotesty i praktyczne poradniki dla kierowców.",
+  "frequency": "Poniedziałek, środa, piątek",
+  "photo": "http://dummyimage.com/300x180.png/ff4444/ffffff",
+  "author": [],
+  "source": [{
+    "image": "autokult.svg",
+    "name": "Autokult",
+    "url": "https://autokult.pl/"
+  }, {
+    "image": "autocentrum.svg",
+    "name": "Autocentrum",
+    "url": "https://www.autocentrum.pl/"
+  }],
+  "preview": null
+}, {
+  "category": null,
+  "id": 5,
+  "title": "Technologia",
+  "tag": "NL_Tech_pn_sr_pt",
+  "description": "Nowinki ze świata technologii. Najciekawsze informacje są na wyciągnięcie ręki.",
+  "frequency": "Poniedziałek, środa, piątek",
+  "photo": "http://dummyimage.com/300x180.png/dddddd/000000",
+  "author": [],
+  "source": [{
+    "image": "wp-tech.svg",
+    "name": "WP Tech",
+    "url": "https://tech.wp.pl/"
+  }],
+  "preview": null
+}, {
+  "category": null,
+  "id": 6,
+  "title": "Technologia (podsumowanie tygodnia)",
+  "tag": "NL_Tech_Top_pt",
+  "description": "Tygodniowe podsumowanie najciekawszych nowinek ze świata technologii, sprzętu, gadżetów i rynku mobile.",
+  "frequency": "Piątek",
+  "photo": "http://dummyimage.com/300x180.png/5fa2dd/ffffff",
+  "author": [],
+  "source": [{
+    "image": "wp-tech.svg",
+    "name": "WP Tech",
+    "url": "https://tech.wp.pl/"
+  }, {
+    "image": "dobre-programy.png",
+    "name": "DobreProgramy",
+    "url": "https://www.dobreprogramy.pl/"
+  }],
+  "preview": null
+}, {
+  "category": null,
+  "id": 7,
+  "title": "Mobile",
+  "tag": "NL_mobile_pn",
+  "description": "Cotygodniowe informacje i nowinki technologiczne dotyczące urządzeń mobilnych. Testy, recenzje, newsy, poradniki. Piszemy zarówno o sprzęcie jak i aplikacjach.",
+  "frequency": "Poniedziałek",
+  "photo": "http://dummyimage.com/300x180.png/5fa2dd/ffffff",
+  "author": [],
+  "source": [{
+    "image": "komorkomania.svg",
+    "name": "Komórkomania",
+    "url": "https://komorkomania.pl/"
+  }],
+  "preview": null
+}, {
+  "category": null,
+  "id": 8,
+  "title": "Zdrowie",
+  "tag": "NL_zdrowie_wt_czw",
+  "description": "Newsy i poradniki dotyczące zdrowia. Baza ekspertów medycznych odpowiadająca na Wasze pytania.",
+  "frequency": "Wtorek, czwartek",
+  "photo": "http://dummyimage.com/300x180.png/5fa2dd/ffffff",
+  "author": [],
+  "source": [{
+    "image": "abc-zdrowie.svg",
+    "name": "ABC Zdrowie",
+    "url": "https://portal.abczdrowie.pl/"
+  }],
+  "preview": null
+}, {
+  "category": null,
+  "id": 9,
+  "title": "Kobieta",
+  "tag": "NL_kobieta_wt_czw",
+  "description": "Ciekawe wywiady, inspiracje, porady i ważne tematy dla kobiet, których nie możesz przegapić.",
+  "frequency": "Wtorek, czwartek",
+  "photo": "http://dummyimage.com/300x180.png/5fa2dd/ffffff",
+  "author": [],
+  "source": [{
+    "image": "wp-kobieta.svg",
+    "name": "WP Kobieta",
+    "url": "https://kobieta.wp.pl/"
+  }],
+  "preview": null
+}, {
+  "category": null,
+  "id": 10,
+  "title": "Kultura i rozywka",
+  "tag": "NL_ksiazka_czw",
+  "description": "Cotygodniowe źródło wiedzy o najnowszych i najlepszych filmach i książkach, które warto zobaczyć.",
+  "frequency": "Czwartek",
+  "photo": "http://dummyimage.com/300x180.png/cc0000/ffffff",
+  "author": [],
+  "source": [{
+    "image": "wp-film.svg",
+    "name": "WP Film",
+    "url": "https://film.wp.pl/"
+  }, {
+    "image": "wp-ksiazki.svg",
+    "name": "WP Ksiazki",
+    "url": "https://ksiazki.wp.pl/"
+  }],
+  "preview": null
+}, {
+  "category": null,
+  "id": 11,
+  "title": "Sport",
+  "tag": "NL_Sport_7D",
+  "description": "Codzienna dawka newsów ze świata sportu. Analizy, wyniki, relacje, wywiady i opinie ekspertów. ",
+  "frequency": "Codziennie",
+  "photo": "http://dummyimage.com/300x180.png/cc0000/ffffff",
+  "author": [],
+  "source": [{
+    "image": "sportowe-fakty.svg",
+    "name": "Sportowe Fakty",
+    "url": "https://sportowefakty.wp.pl/"
+  }],
+  "preview": null
+}, {
+  "category": null,
+  "id": 12,
+  "title": "Wiadomości",
+  "tag": "NL_wiadomosci_7D",
+  "description": "Bądź na bieżąco z najnowszymi informacjami z Polski i Świata. Dzięki nam nic Cię nie ominie.",
+  "frequency": "Codziennie",
+  "photo": "http://dummyimage.com/300x180.png/5fa2dd/ffffff",
+  "author": [],
+  "source": [{
+    "image": "wp-wiadomosci.svg",
+    "name": "WP Wiadomości",
+    "url": "https://wiadomosci.wp.pl/"
+  }],
+  "preview": null
+}, {
+  "category": null,
+  "id": 13,
+  "title": "Polityka",
+  "tag": "NL_polityka_7D",
+  "description": "Najważniejsze informacje i wydarzenia ze świata polityki. Z nami możesz na bieżąco śledzić poczynania polskich polityków.",
+  "frequency": "Codziennie",
+  "photo": "http://dummyimage.com/300x180.png/cc0000/ffffff",
+  "author": [],
+  "source": [{
+    "image": "wp-wiadomosci.svg",
+    "name": "WP Wiadomości",
+    "url": "https://wiadomosci.wp.pl/"
+  }],
+  "preview": null
+}, {
+  "category": null,
+  "id": 14,
+  "title": "Wiadomości (podsumowanie tygodnia)",
+  "tag": "NL_wiadomosci_top_pt",
+  "description": "Tygodniowe podsumowanie najważniejszych i najciekawszych wiadomości, których nie możesz przegapić.",
+  "frequency": "Poniedziałek",
+  "photo": "http://dummyimage.com/300x180.png/ff4444/ffffff",
+  "author": [],
+  "source": [{
+    "image": "wp-wiadomosci.svg",
+    "name": "WP Wiadomości",
+    "url": "https://wiadomosci.wp.pl/"
+  }],
+  "preview": null
+}, {
+  "category": null,
+  "id": 15,
+  "title": "Gry",
+  "tag": "NL_gry_wt_pt",
+  "description": "Wszystko o grach na PC, PS4 i Xbox One. Newsy, zapowiedzi, recenzje.",
+  "frequency": "Wtorek, piątek",
+  "photo": "http://dummyimage.com/300x180.png/cc0000/ffffff",
+  "author": [],
+  "source": [{
+    "image": "polygamia.svg",
+    "name": "Polygamia",
+    "url": "https://polygamia.pl/"
+  }],
+  "preview": null
+}, {
+  "category": null,
+  "id": 16,
+  "title": "o2",
+  "tag": "NL_o2_7D",
+  "description": "Codzienna dawka wiedzy z serwisu o2. Wiadomości, quizy, opinie i ciekawe wywiady.",
+  "frequency": "Codziennie",
+  "photo": "http://dummyimage.com/300x180.png/5fa2dd/ffffff",
+  "author": [],
+  "source": [{
+    "image": "o2.png",
+    "name": "o2",
+    "url": "https://www.o2.pl/"
+  }],
+  "preview": null
+}, {
+  "category": null,
+  "id": 17,
+  "title": "Plotki i Gwiazdy",
+  "tag": "NL_gwiazdy_7D",
+  "description": "Świeże plotki ze świata polskich i zagranicznych celebrytów. Najnowsze newsy, skandale, zdjęcia i wpadki. Zdradzamy sekrety z życia gwiazd!",
+  "frequency": "Codziennie",
+  "photo": "http://dummyimage.com/300x180.png/cc0000/ffffff",
+  "author": [],
+  "source": [{
+    "image": "pudelek.svg",
+    "name": "Pudelek",
+    "url": "https://www.pudelek.pl/"
+  }],
+  "preview": null
+}]

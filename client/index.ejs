@@ -1,11 +1,12 @@
-<!DOCTYPE html>
-<html lang="en">
+<!doctype html>
+<html lang="pl">
 <head>
-    <meta charset="utf-8">
-    <title>Express and Webpack App</title>
-    <link rel="shortcut icon" href="#">
-    <script src="http://localhost:3000/static/webcomponentsjs/custom-elements-es5-adapter.js"></script>
-    <script src="http://localhost:3000/static/webcomponentsjs/webcomponents-loader.js"></script>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Newslettery <%= htmlWebpackPlugin.options.title %></title>
+    <script src="webcomponentsjs/custom-elements-es5-adapter.js"></script>
+    <script src="webcomponentsjs/webcomponents-loader.js"></script>
+    <link rel="stylesheet" href="vendors/skeleton.min.css">
 </head>
 <body>
 <header>
@@ -53,7 +54,6 @@
         </div>
     </footer>
 </form>
-<script src="http://localhost:3000/static/client.js"></script>
 <script type="text/javascript">
     var _smid = "3u0o1xi181w5w4r0";
     (function(w, r, a, sm, s ) {

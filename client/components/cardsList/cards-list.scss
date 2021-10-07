@@ -1,0 +1,27 @@
+.row {
+    align-items: stretch;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    height: auto;
+    margin: 0 -1rem;
+}
+
+.card-element {
+    display: block;
+    float: left;
+    padding: 1rem;
+    width: 33.3333%;
+}
+
+@media(max-width: 1023px) {
+    .card-element {
+        width: 50%;
+    }
+}
+
+@media(max-width: 560px) {
+    .card-element {
+        width: 100%;
+    }
+}

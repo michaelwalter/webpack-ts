@@ -1,0 +1,87 @@
+.card-wrapper {
+    background: var(--white);
+    border: 1px solid var(--light-grey);
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    justify-content: space-between;
+    padding: 1.5rem 1rem 2rem;
+}
+
+.card-footer {
+    align-items: baseline;
+    display: flex;
+    font-size: 0.875rem;
+    font-weight: 600;
+    justify-content: space-between;
+    letter-spacing: 0.02em;
+    line-height: 1.5rem;
+    margin-top: 2rem;
+    text-transform: uppercase;
+    white-space: nowrap;
+}
+
+.sign-in {
+    width: 50%;
+}
+
+.sign-in:hover {
+    text-decoration: underline;
+    text-decoration-color: var(--medium-grey);
+}
+
+label {
+    color: var(--medium-grey);
+    margin-bottom: 0;
+}
+
+.sign-me-checkbox {
+    opacity: 0;
+    position: absolute;
+}
+
+.sign-me-checkbox + label {
+    cursor: pointer;
+    padding: 0;
+    position: relative;
+}
+
+.sign-me-checkbox + label::before {
+    background: var(--white);
+    border: 1px solid var(--medium-grey);
+    border-radius: 6px;
+    content: '';
+    display: inline-block;
+    height: 1.5rem;
+    margin-right: 0.5rem;
+    vertical-align: middle;
+    width: 1.5rem;
+}
+
+.sign-me-checkbox:checked + label::after {
+    color: var(--white);
+    content: '⅃';
+    font-size: 1.4rem;
+    font-weight: 300;
+    left: 4px;
+    position: absolute;
+    top: -2px;
+    transform: rotate(45deg);
+}
+
+.sign-me-checkbox:checked + label::before {
+    background: var(--dark-grey);
+}
+
+.card-footer a {
+    color: var(--blue);
+    display: block;
+    text-align: right;
+    text-decoration: none;
+    width: 50%;
+}
+
+.card-footer a:hover {
+    text-decoration: underline;
+}
