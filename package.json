@@ -7,8 +7,8 @@
     "clean": "rm -rf dist",
     "build": "webpack",
     "watch": "webpack --watch",
-    "server": "nodemon --watch './dist/server' dist/server/server.js",
-    "start": "npm-run-all -p server watch"
+    "server": "nodemon --watch dist/server dist/server/server.js",
+    "start": "npm-run-all -p clean watch server"
   },
   "author": "",
   "license": "ISC",
