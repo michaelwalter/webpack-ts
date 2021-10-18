@@ -1,9 +1,15 @@
-const path = require("path");
+const webpack = require('webpack')
+const path = require('path')
+const dotEnv = require('dotenv')
+const commonConfig = require('./webpack.common.config')
+const { ROOT } = require('./_helpers/constants')
+
+dotEnv.config();
 
 module.exports = {
-    mode: 'development',
+    ...commonConfig,
     entry: {
-        'client': path.resolve(__dirname, '../client/index.ts')
+        'client': path.resolve(ROOT.CLIENT, 'index.ts'),
     },
     output: {
         filename: '[name].js',
@@ -13,10 +19,10 @@ module.exports = {
     target: 'web',
     devtool: 'source-map',
     resolve: {
-        roots: [path.resolve(__dirname, '../client')],
+        roots: [ROOT.CLIENT],
         extensions: [ '.tsx', '.ts', '.js', '.html' ],
         modules: [
-            path.resolve(__dirname, '../client'),
+            ROOT.CLIENT,
             path.resolve(__dirname, '../node_modules')
         ],
     },
@@ -41,5 +47,12 @@ module.exports = {
                 use: ['file-loader']
             }
         ]
-    }
+    },
+    plugins: [
+        new webpack.DefinePlugin({
+            ENV: {
+                PORT: process.env.PORT
+            }
+        })
+    ]
 }

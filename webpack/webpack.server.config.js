@@ -1,11 +1,17 @@
-const nodeExternals = require('webpack-node-externals');
-const HtmlWebPackPlugin = require('html-webpack-plugin');
-const path = require('path');
+const webpack = require('webpack')
+const path = require('path')
+const dotEnv = require('dotenv')
+const nodeExternals = require('webpack-node-externals')
+const HtmlWebPackPlugin = require('html-webpack-plugin')
+const commonConfig = require('./webpack.common.config')
+const { ROOT } = require('./_helpers/constants')
+
+dotEnv.config();
 
 module.exports = {
-    mode: 'development',
+    ...commonConfig,
     entry: {
-        'server': path.resolve(__dirname, '../server/index.ts'),
+        'server': path.resolve(ROOT.SERVER, 'index.ts'),
     },
     output: {
         filename: '[name].js',
@@ -19,17 +25,13 @@ module.exports = {
                 use: 'ts-loader',
                 exclude: /node_modules/
             },
-            {
-                test: /\.html$/,
-                use: 'html-loader'
-            }
         ]
     },
     resolve: {
-        roots: [path.resolve(__dirname, '../server')],
+        roots: [ROOT.SERVER],
         extensions: [ '.tsx', '.ts', '.js', '.html' ],
         modules: [
-            path.resolve(__dirname, '../server'),
+            ROOT.SERVER,
             path.resolve(__dirname, '../node_modules')
         ]
     },
@@ -40,8 +42,13 @@ module.exports = {
     externals: [nodeExternals()],
     plugins: [
         new HtmlWebPackPlugin({
-            template: path.resolve(__dirname, '../server/index.html'),
+            template: path.resolve(ROOT.SERVER, 'index.html'),
             excludeChunks: [ 'server' ]
+        }),
+        new webpack.DefinePlugin({
+            ENV: {
+                PORT: process.env.PORT
+            }
         })
     ]
 }
